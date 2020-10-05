@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from './components/App';
+import App from './components/app/app';
 
-const numOfError = 5;
+const Settings = {
+  ERRORS_COUNT: 3
+};
 
 ReactDOM.render(
-    <App name={numOfError}/>,
+    <App name={Settings.ERRORS_COUNT}/>,
     document.getElementById(`root`)
 );
